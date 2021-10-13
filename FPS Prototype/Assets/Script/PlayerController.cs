@@ -9,9 +9,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private KeyCode keyCodeRun = KeyCode.LeftShift;
 
+    [Header("Input KeyCodes")]
+    [SerializeField]
+    private KeyCode keyCodeJump = KeyCode.Space;
+
+    [Header("Audio Clips")]
+    [SerializeField]
+    private AudioClip audioClipWalk;
+    [SerializeField]
+    private AudioClip audioClipRun;
+
+
     private RotateToMouse rotateToMouse;
     private MovementPlayerController movement;
     private Status status;
+    private PlayerAnimatorController animator;
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -21,6 +34,8 @@ public class PlayerController : MonoBehaviour
         rotateToMouse = GetComponent<RotateToMouse>();
         movement = GetComponent<MovementPlayerController>();
         status = GetComponent<Status>();
+        audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<PlayerAnimatorController>();
     }
 
     private void Update()
@@ -42,8 +57,26 @@ public class PlayerController : MonoBehaviour
                 isRun = Input.GetKey(keyCodeRun);
 
             movement.MoveSpeed = isRun == true ? status.RunSpeed : status.WalkSpeed;
-        }
+            animator.MoveSpeed = isRun == true ? 1 : 0.5f;
+            audioSource.clip = isRun == true ? audioClipRun : audioClipWalk;
 
+            if (!audioSource.isPlaying)
+            {
+                audioSource.loop = true;
+                audioSource.Play();
+            }
+        }
+        //Á¦ÀÚ¸®
+        else
+        {
+            movement.MoveSpeed = 0;
+            animator.MoveSpeed = 0;
+
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+        }
 
 
 
@@ -56,5 +89,13 @@ public class PlayerController : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y");
 
         rotateToMouse.UpdateRotate(mouseX, mouseY);
+    }
+
+    private void UpdateJump()
+    {
+        if(Input.GetKeyDown(keyCodeJump))
+        {
+            movement.Jump();
+        }
     }
 }

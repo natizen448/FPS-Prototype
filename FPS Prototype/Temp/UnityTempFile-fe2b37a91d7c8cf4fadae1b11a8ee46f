@@ -323,7 +323,7 @@
 "Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Weapon_Scripts\AutomaticGunScriptLPFP.cs"
 "Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Weapon_Scripts\HandgunScriptLPFP.cs"
 Assets\Script\MovementPlayerController.cs
-Assets\Script\PlayerAnima.cs
+Assets\Script\PlayerAnimatorController.cs
 Assets\Script\PlayerController.cs
 Assets\Script\RotateToMouse.cs
 Assets\Script\Status.cs
