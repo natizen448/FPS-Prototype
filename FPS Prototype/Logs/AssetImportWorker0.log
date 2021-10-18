@@ -263,3 +263,34 @@ System memory in use after: 63.7 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1601.
 Total: 1.652600 ms (FindLiveObjects: 0.142300 ms CreateObjectMapping: 0.030200 ms MarkObjects: 1.436400 ms  DeleteObjects: 0.042700 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000554 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.582 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1129 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.6 MB.
+System memory in use after: 63.7 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1604.
+Total: 1.608500 ms (FindLiveObjects: 0.160200 ms CreateObjectMapping: 0.030800 ms MarkObjects: 1.372000 ms  DeleteObjects: 0.044300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 291.824625 seconds.
+  path: Assets/Script/WeaponSetting.cs
+  artifactKey: Guid(0a197349534348743893dbe43429fda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/WeaponSetting.cs using Guid(0a197349534348743893dbe43429fda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77e4fa5ae9841bb1fb50e8d31d1ea97f') in 0.003911 seconds
+  Import took 0.006007 seconds .
+

@@ -8,11 +8,19 @@ public class WeaponAssaultRifle : MonoBehaviour
     [SerializeField]
     private AudioClip audioClipTakeOutWeapon;   //무기 장착 사운드
 
+    [Header("Weapon Setting")]
+    [SerializeField]
+    private WeaponSetting weaponSetting; //무기 설정
+
+    private float lastAttackTime = 0; //마지막 발사 시간 체크용
+
     private AudioSource audioSource;            //사운드 재생 컴포넌트
+    private PlayerAnimatorController animator; //애니메이션 재생 제어
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        animator = GetComponentInParent<PlayerAnimatorController>();
     }
 
     private void OnEnable()
