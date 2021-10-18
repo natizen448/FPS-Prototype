@@ -328,3 +328,4 @@ Assets\Script\PlayerController.cs
 Assets\Script\RotateToMouse.cs
 Assets\Script\Status.cs
 Assets\Script\WeaponAssaultRifle.cs
+Assets\Script\WeaponSettin.cs

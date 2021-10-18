@@ -1,19 +1,14 @@
 /target:library
-/out:Temp/Unity.TextMeshPro.dll
+/out:Temp/Assembly-CSharp.dll
 /nowarn:0169
 /nowarn:0649
-/refout:Temp/Unity.TextMeshPro.dll.ref
+/refout:Temp/Assembly-CSharp.dll.ref
 /deterministic
 /debug:portable
 /optimize+
 /nostdlib+
 /preferreduilang:en-US
 /langversion:8.0
-/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
-/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
-/reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
-/reference:"C:/Unity WorkSpace/2020.3.2f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
-/reference:"C:/Unity WorkSpace/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 /reference:"C:/Unity WorkSpace/2020.3.2f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 /reference:"C:/Unity WorkSpace/2020.3.2f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll"
 /reference:"C:/Unity WorkSpace/2020.3.2f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll"
@@ -203,6 +198,15 @@
 /reference:"C:/Unity WorkSpace/2020.3.2f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll"
 /reference:"C:/Unity WorkSpace/2020.3.2f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll"
 /reference:"C:/Unity WorkSpace/2020.3.2f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+/reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.Timeline.dll
+/reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
 /define:CSHARP_7_3_OR_NEWER
 /define:CSHARP_7_OR_LATER
 /define:DEBUG
@@ -306,62 +310,22 @@
 /define:UNITY_STANDALONE_WIN
 /define:UNITY_TEAM_LICENSE
 /define:USE_SEARCH_ENGINE_API
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\AssemblyInfo.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\FastAction.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\ITextPreProcessor.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\MaterialReferenceManager.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_Asset.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_Character.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_CharacterInfo.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_ColorGradient.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_Compatibility.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_CoroutineTween.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_DefaultControls.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_Dropdown.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_EditorResourceManager.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_FontAsset.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_FontAssetCommon.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_FontAssetUtilities.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_FontFeatureTable.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_FontFeaturesCommon.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_InputField.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_InputValidator.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_LineInfo.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_ListPool.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_MaterialManager.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_MeshInfo.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_ObjectPool.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_PackageResourceImporter.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_ResourcesManager.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_RichTextTagsCommon.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_ScrollbarEventHandler.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SelectionCaret.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_Settings.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_ShaderUtilities.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_Sprite.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SpriteAnimator.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SpriteAsset.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SpriteAssetImportFormats.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SpriteCharacter.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SpriteGlyph.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_Style.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_StyleSheet.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SubMesh.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SubMeshUI.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_Text.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_TextElement.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_TextElement_Legacy.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_TextInfo.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_TextParsingUtilities.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_TextProcessingStack.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_TextUtilities.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_UpdateManager.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_UpdateRegistery.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMPro_EventManager.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMPro_ExtensionMethods.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMPro_MeshUtilities.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMPro_Private.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMPro_UGUI_Private.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TextContainer.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TextMeshPro.cs"
-"C:\Users\natiz\OneDrive\문서\GitHub\FPS-Prototype\FPS Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TextMeshProUGUI.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\DebrisScript.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\ExplosiveBarrelScript.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\TargetScript.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Bullet\BulletScript.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Casings_&_Projectiles\CasingScript.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Casings_&_Projectiles\GrenadeScript.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Explosions_&_Impacts\ExplosionScript.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Explosions_&_Impacts\ImpactScript.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\FPSController\FpsControllerLPFP.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Misc\LookAtCamera.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Weapon_Scripts\AutomaticGunScriptLPFP.cs"
+"Assets\ExternelAssets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Weapon_Scripts\HandgunScriptLPFP.cs"
+Assets\Script\MovementPlayerController.cs
+Assets\Script\PlayerAnimatorController.cs
+Assets\Script\PlayerController.cs
+Assets\Script\RotateToMouse.cs
+Assets\Script\Status.cs
+Assets\Script\WeaponAssaultRifle.cs
+Assets\Script\WeaponSetting.cs
