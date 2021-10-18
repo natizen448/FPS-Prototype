@@ -60,6 +60,24 @@ public class WeaponAssaultRifle : MonoBehaviour
         }
     }
 
+    public void OnAttack()
+    {
+        if(Time.time - lastAttackTime > weaponSetting.attackRate)
+        {
+            //뛰고있을 때는 공격할 수 없다
+            if(animator.MoveSpeed > 0.5f)
+            {
+                return;
+            }
+
+            //공격주기가 되어야 공격할 수 있도록 하기 위해 현재 시간 저장
+            lastAttackTime = Time.time;
+
+            //무기 애니메이션 재생
+            animator.Play("Fire", -1, 0);
+        }
+    }
+
     private void OnEnable()
     {
         //무기 장착 사운드 재생
