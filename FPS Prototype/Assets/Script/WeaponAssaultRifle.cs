@@ -23,6 +23,43 @@ public class WeaponAssaultRifle : MonoBehaviour
         animator = GetComponentInParent<PlayerAnimatorController>();
     }
 
+    public void StartWeaponAction(int type = 0)
+    {
+        //마우스 왼쪽 클릭(공격 시작)
+        if(type == 0)
+        {
+            //연속공격
+            if(weaponSetting.isAutomaticAttack)
+            {
+                StartCoroutine(OnAttackLoop());
+            }
+            //단발공격
+            else
+            {
+                OnAttack();
+            }
+        }
+    }
+
+    public void StopWeaponAction(int type = 0)
+    {
+        //마우스 왼쪽 클릭(공격 종료)
+        if(type == 0)
+        {
+            StopCoroutine(OnAttackLoop());
+        }
+    }
+
+    private IEnumerator OnAttackLoop()
+    {
+        while(true)
+        {
+            OnAttack();
+
+            yield return null;
+        }
+    }
+
     private void OnEnable()
     {
         //무기 장착 사운드 재생
