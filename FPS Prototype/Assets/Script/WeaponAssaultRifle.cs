@@ -39,7 +39,7 @@ public class WeaponAssaultRifle : MonoBehaviour
                 OnAttack();
             }
         }
-    }
+    }   
 
     public void StopWeaponAction(int type = 0)
     {

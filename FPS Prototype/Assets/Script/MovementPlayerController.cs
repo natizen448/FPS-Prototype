@@ -36,7 +36,7 @@ public class MovementPlayerController : MonoBehaviour
 
         if(!characterController.isGrounded)
         {
-            moveForce.y += gravity = Time.deltaTime;
+            moveForce.y += gravity * Time.deltaTime;
         }    
 
 

@@ -7,24 +7,25 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Input KeyCodes")]
     [SerializeField]
-    private KeyCode keyCodeRun = KeyCode.LeftShift;
+    private KeyCode keyCodeRun = KeyCode.LeftShift; //달리기 키
 
     [Header("Input KeyCodes")]
     [SerializeField]
-    private KeyCode keyCodeJump = KeyCode.Space;
+    private KeyCode keyCodeJump = KeyCode.Space; //점프 키
 
     [Header("Audio Clips")]
     [SerializeField]
-    private AudioClip audioClipWalk;
+    private AudioClip audioClipWalk; //걷기 사운드
     [SerializeField]
-    private AudioClip audioClipRun;
+    private AudioClip audioClipRun; //달리기 사운드
 
 
-    private RotateToMouse rotateToMouse;
-    private MovementPlayerController movement;
-    private Status status;
-    private PlayerAnimatorController animator;
-    private AudioSource audioSource;
+    private RotateToMouse rotateToMouse; //마우스 이동으로 카메라 회전
+    private MovementPlayerController movement;//키보드 입력으로 플레이어 이동, 점프
+    private Status status;//이동속도등의 플레이어 정보
+    private PlayerAnimatorController animator; //애니메이션 재생 제어
+    private AudioSource audioSource; //사운드 재생 제어
+    private WeaponAssaultRifle weapon; //무기를 이용한 공격 제어
 
     private void Awake()
     {
@@ -36,12 +37,15 @@ public class PlayerController : MonoBehaviour
         status = GetComponent<Status>();
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<PlayerAnimatorController>();
+        weapon = GetComponentInChildren<WeaponAssaultRifle>();
     }
 
     private void Update()
     {
         UpdateRotate();
+        UpdateJump();
         UpdateMove();
+        UpdateWeaponAction();
     }
 
     private void UpdateMove()
@@ -98,4 +102,17 @@ public class PlayerController : MonoBehaviour
             movement.Jump();
         }
     }
+
+    private void UpdateWeaponAction()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            weapon.StartWeaponAction();
+        }
+        else if(Input.GetMouseButtonUp(0))
+        {
+            weapon.StopWeaponAction();
+        }
+    }
+
 }
