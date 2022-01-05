@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
     [Header("Input KeyCodes")]
     [SerializeField]
     private KeyCode keyCodeRun = KeyCode.LeftShift; //달리기 키
-
-    [Header("Input KeyCodes")]
     [SerializeField]
     private KeyCode keyCodeJump = KeyCode.Space; //점프 키
 
@@ -47,7 +45,7 @@ public class PlayerController : MonoBehaviour
         UpdateMove();
         UpdateWeaponAction();
     }
-
+            
     private void UpdateMove()
     {
         float x = Input.GetAxis("Horizontal");
@@ -88,7 +86,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void UpdateRotate()
-    {
+    {   
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 

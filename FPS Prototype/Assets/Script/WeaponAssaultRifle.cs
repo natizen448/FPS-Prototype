@@ -32,7 +32,7 @@ public class WeaponAssaultRifle : MonoBehaviour
             if(weaponSetting.isAutomaticAttack)
             {
                 StartCoroutine(OnAttackLoop());
-            }
+            }   
             //단발공격
             else
             {
